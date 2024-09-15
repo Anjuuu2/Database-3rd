@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regis.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <audio id="background-music" autoplay loop></audio>
+        <source src="music/music.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="video-container">
+        <video autoplay muted loop id="bgVideo">
+            <source src="video/videoplayback.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+
+    <div class="register-container">
+        <div class="form-wrapper fade-in">
+            <h2>Register</h2>
+            <form action="register.php" method="post">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="Fname">First Name</label>
+                    <input type="text" id="Fname" name="Fname" required>
+                </div>
+                <div class="input-group">
+                    <label for="Lname">Last Name</label>
+                    <input type="text" id="Lname" name="Lname" required>
+                </div>
+                <div class="input-group">
+                    <label for="Mname">Middle Name (Optional)</label>
+                    <input type="text" id="Mname" name="Mname">
+                </div>
+                <div class="input-group">
+                    <label for="Bday">Birthday</label>
+                    <input type="date" id="Bday" name="Birthday" required>
+                </div>
+                <div class="input-group">
+                    <label for="Contact">Contact</label>
+                    <input type="text" id="Contact" name="Contact" required>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+                <div class="form-footer">
+                    <p>Already have an account? <a href="index.html">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
